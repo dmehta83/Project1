@@ -1,0 +1,20 @@
+pipeline{
+	agent any
+	stages{
+		stage ("InstallDocker"){
+			steps{
+			sh "echo InstallDocker"
+			}
+		}
+		stage ("RunDocker"){
+			steps{
+			sh "echo RunDocker"
+			}
+		}
+		stage ("RemoveDocker"){
+			steps{
+			sh "echo RemoveDocker"
+			}
+		}
+	}
+}
